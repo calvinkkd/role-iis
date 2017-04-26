@@ -1,10 +1,11 @@
 # This is the main tasks file for the iis role
 
-- name: Reboot Server
-  win_reboot:
-    host: inventory_hostname
-
 - name: Install roles/features
   include: iis_install.yml
   with_items: "{{ win_features }}"
   when:  "'{{ item.version }}' in ansible_distribution"
+
+
+- name: Reboot Server
+  win_reboot:
+    host: inventory_hostname
