@@ -1,0 +1,30 @@
+- name: Wait for it
+  wait_for: 
+    host: "{{ inventory_hostname }}"
+    port: '5985'
+    delay: '60'
+    timeout: '320'
+    state: 'started'
+
+- name: do it
+  win_feature:
+    name: "{{ item.name }}"
+    state: absent
+    restart: yes
+
+
+- name: Reboot Server. 
+  debug:
+    msg: "{{ ansible_ip_addresses[0] }}"
+  register: mysql_master_host
+  when: inventory_hostname == ansible_play_hosts[0]
+
+- name: Reboot Server. 
+  debug:
+    msg: "{{ ansible_ip_addresses[0] }}"
+  register: mysql_slave_host
+  when: inventory_hostname == ansible_play_hosts[1]
+
+- name: Reboot Server. 
+  debug:
+    msg: "El Master es {{ mysql_master_host }} y El slave es {{ mysql_slave_host }}"

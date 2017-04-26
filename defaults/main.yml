@@ -1,0 +1,88 @@
+#List of roles/features for Windows Server and '2012' and '2012' 
+
+#For Windows Server '2012'
+win_media_path_2012: 'http://10.46.72.11/windows/media/win_server_2012/'
+
+win_features:
+  - { name: 'Web-Server', version: '2008' }
+  - { name: 'Web-Common-Http', version: '2008' }
+  - { name: 'Web-Http-Redirect', version: '2008' }
+  - { name: 'Web-DAV-Publishing', version: '2008' }
+  - { name: 'Web-Asp-Net', version: '2008' }
+  - { name: 'Web-Net-Ext', version: '2008' }
+  - { name: 'Web-ASP', version: '2008' }
+  - { name: 'Web-CGI', version: '2008' }
+  - { name: 'Web-ISAPI-Ext', version: '2008' }
+  - { name: 'Web-ISAPI-Filter', version: '2008' }
+  - { name: 'Web-Health', version: '2008' }
+  - { name: 'Web-Log-Libraries', version: '2008' }
+  - { name: 'Web-Http-Tracing', version: '2008' }
+  - { name: 'Web-Custom-Logging', version: '2008' }
+  - { name: 'Web-ODBC-Logging', version: '2008' }
+  - { name: 'Web-Basic-Auth', version: '2008' }
+  - { name: 'Web-Windows-Auth', version: '2008' }
+  - { name: 'Web-IP-Security', version: '2008' }
+  - { name: 'Web-Performance', version: '2008' }
+  - { name: 'Web-Dyn-Compression', version: '2008' }
+  - { name: 'Web-Scripting-Tools', version: '2008' }
+  - { name: 'Web-Metabase', version: '2008' }
+  - { name: 'Web-Lgcy-Mgmt-Console', version: '2008' }
+  - { name: 'Telnet-Client', version: '2008' }
+  - { name: 'NET-Framework-Core', version: '2008' }
+  - { name: 'NET-Win-CFAC', version: '2008' }
+  - { name: 'NET-HTTP-Activation', version: '2008' }
+  - { name: 'NET-Non-HTTP-Activ', version: '2008' }
+  - { name: 'BITS', version: '2008' }
+  - { name: 'BITS-Compact-Server', version: '2008' }
+  - { name: 'BITS-IIS-Ext', version: '2008' }
+  - { name: 'SMTP-Server', version: '2008' }
+  - { name: 'WAS', version: '2008' }
+  - { name: 'WAS-Process-Model', version: '2008' }
+  - { name: 'WAS-NET-Environment', version: '2008' }
+  - { name: 'WAS-Config-APIs', version: '2008' }
+  - { name: 'RSAT-SMTP', version: '2008' }
+  - { name: 'RSAT-Bits-Server', version: '2008' }
+# Windows Server '2012'
+  - { name: 'NET-Framework-Core', version: '2012' } #,path: win_media_path_2012 }
+  - { name: 'Web-Common-Http', version: '2012' }
+  - { name: 'Web-Static-Content', version: '2012' }
+  - { name: 'Web-Default-Doc', version: '2012' }
+  - { name: 'Web-Dir-Browsing', version: '2012' }
+  - { name: 'Web-Http-Errors', version: '2012' }
+  - { name: 'Web-App-Dev', version: '2012' }
+  - { name: 'NET-Framework-Features', version: '2012' }
+  - { name: 'Web-Asp-Net', version: '2012' }
+  - { name: 'Web-Net-Ext', version: '2012' }
+  - { name: 'Web-ISAPI-Ext', version: '2012' }
+  - { name: 'Web-ISAPI-Filter', version: '2012' }
+  - { name: 'Web-Health', version: '2012' }
+  - { name: 'Web-Http-Logging', version: '2012' }
+  - { name: 'Web-Log-Libraries', version: '2012' }
+  - { name: 'Web-Request-Monitor', version: '2012' }
+  - { name: 'Web-Http-Tracing', version: '2012' }
+  - { name: 'Web-Security', version: '2012' }
+  - { name: 'Web-Basic-Auth', version: '2012' }
+  - { name: 'Web-Windows-Auth', version: '2012' }
+  - { name: 'Web-Filtering', version: '2012' }
+  - { name: 'Web-Digest-Auth', version: '2012' }
+  - { name: 'Web-Performance', version: '2012' }
+  - { name: 'Web-Stat-Compression', version: '2012' }
+  - { name: 'Web-Dyn-Compression', version: '2012' }
+  - { name: 'Web-Mgmt-Tools', version: '2012' }
+  - { name: 'Web-Mgmt-Console', version: '2012' }
+  - { name: 'Web-Mgmt-Compat', version: '2012' }
+  - { name: 'Web-Metabase', version: '2012' }
+  - { name: 'AS-Web-Support', version: '2012' }
+  - { name: 'AS-TCP-Port-Sharing', version: '2012' }
+  - { name: 'AS-WAS-Support', version: '2012' }
+  - { name: 'AS-HTTP-Activation', version: '2012' }
+  - { name: 'AS-TCP-Activation', version: '2012' }
+  - { name: 'AS-Named-Pipes', version: '2012' }
+  - { name: 'AS-Net-Framework', version: '2012' }
+  - { name: 'WAS-Process-Model', version: '2012' }
+  - { name: 'WAS-NET-Environment', version: '2012' }
+  - { name: 'WAS-Config-APIs', version: '2012' }
+  - { name: 'Web-Lgcy-Scripting', version: '2012' }
+  - { name: 'Windows-Identity-Foundation', version: '2012' }
+  - { name: 'Server-Media-Foundation', version: '2012' }
+  - { name: 'Xps-Viewer', version: '2012' }

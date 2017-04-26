@@ -1,0 +1,16 @@
+---
+#Install and restart servers
+- name: install
+  win_feature:
+    name: "{{ item.name }}"
+    state: present
+    path: "{{ item.path | default() }}"
+    restart: yes
+  register: result
+  until: result|succeeded or result|skipped
+  retries: 5
+  delay: 300
+
+- name: Reboot Server
+  win_reboot:
+    host: inventory_hostname
