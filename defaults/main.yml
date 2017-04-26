@@ -42,6 +42,7 @@ win_features:
   - { name: 'WAS-Config-APIs', version: '2008' }
   - { name: 'RSAT-SMTP', version: '2008' }
   - { name: 'RSAT-Bits-Server', version: '2008' }
+  
 # Windows Server '2012'
   - { name: 'NET-Framework-Core', version: '2012' } #,path: win_media_path_2012 }
   - { name: 'Web-Common-Http', version: '2012' }

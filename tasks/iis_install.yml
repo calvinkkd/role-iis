@@ -5,7 +5,7 @@
     name: "{{ item.name }}"
     state: present
     path: "{{ item.path | default() }}"
-    restart: yes
+    restart: no
   register: result
   until: result|succeeded or result|skipped
   retries: 5
